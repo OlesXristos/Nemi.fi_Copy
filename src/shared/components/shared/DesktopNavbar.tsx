@@ -18,10 +18,10 @@ const DesktopNavbar = () => {
 
     checkAccess();
 
-    // 🔁 Слухаємо власну подію (видається вручну після вводу коду)
+    //  Слухаємо власну подію (видається вручну після вводу коду)
     window.addEventListener('early-access-granted', checkAccess);
 
-    // 🔁 Слухаємо зміни в localStorage (навіть з інших вкладок або removeItem)
+    // зміни в localStorage (навіть з інших вкладок або removeItem)
     window.addEventListener('storage', checkAccess);
 
     return () => {
