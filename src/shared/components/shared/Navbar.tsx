@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import DesktopNavbar from './DesktopNavbar';
-import MobileNavbar from './MobileNavbar';
+import MobileNavbar from './BurgerNavMenu';
 import BannerLogoDiv from '../ui/BannerLogoDiv';
+import BurgerNavMenu from './BurgerNavMenu';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -48,7 +49,7 @@ const Navbar = () => {
 
         <div className="flex items-center space-x-2">
           <DesktopNavbar />
-          <MobileNavbar />
+          <BurgerNavMenu />
         </div>
       </div>
     </nav>

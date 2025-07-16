@@ -5,25 +5,27 @@ export const MainFooter = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
+      {' '}
+      {/**className="mb-15 sm:mb-0" */}
       <div className="flex justify-between text-xs text-gray-400 items-center border-t-1 py-1.5 px-2 sm:px-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
         <div className="w-1/3">
           <p className="">© {currentYear} NEMI</p>
         </div>
         <div className="flex gap-3">
-          <div className="flex sm:gap-5 items-center ">
-            <p>Privacy Policy</p>
-            <p>Terms of Service</p>
+          <div className="flex gap-3 sm:gap-5 items-center ">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
           </div>
           <div className=" flex  justify-center gap-2 ">
             <Link
               href="https://discord.gg/GBxFNJtz7p"
               target="_blank"
               rel="noopener noreferrer"
-              className=" bg-white rounded-full p-2 sm:p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900">
+              className=" flex items-center w-full bg-white rounded-full p-2 sm:p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900">
               {' '}
               <svg
-                width="16px"
-                height="16px"
+                width="14px"
+                height="14px"
                 viewBox="0 0 24 24"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg">
@@ -34,14 +36,13 @@ export const MainFooter = () => {
               href="https://x.com/nemi_fi"
               target="_blank"
               rel="noopener noreferrer "
-              className=" bg-white rounded-full p-2 sm:p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900">
+              className="flex items-center bg-white rounded-full p-2 sm:p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                height="16px"
+                width="14px"
+                height="14px"
                 fill="#232323"
-                viewBox="0 0 24 24"
-                className="dark:text-white">
+                viewBox="0 0 24 24">
                 <title>X</title>
                 <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path>
               </svg>
@@ -50,14 +51,13 @@ export const MainFooter = () => {
               href="https://t.me/nemi_fi"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-full p-2 sm:p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900">
+              className="flex items-center bg-white rounded-full  p-2 sm:p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                height="16px"
+                width="14px"
+                height="14px"
                 fill="#232323"
-                viewBox="0 0 24 24"
-                className="dark:text-white">
+                viewBox="0 0 24 24">
                 <title>Telegram</title>
                 <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path>
               </svg>

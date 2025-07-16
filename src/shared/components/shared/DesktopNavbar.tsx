@@ -42,11 +42,11 @@ const DesktopNavbar = () => {
 
   return (
     <div className="flex items-center gap-3">
-      <div className="hidden md:flex">
+      <div>
         <ModeToggle />
       </div>
       {unlocked ? (
-        <ConnectWalletButton />
+        <ConnectWalletButton className="hidden " />
       ) : (
         <Button variant="default" className="flex items-center gap-2 " asChild>
           <Link href="https://tally.so/r/nP4VE1">

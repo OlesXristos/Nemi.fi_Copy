@@ -49,17 +49,21 @@ const otherWallets = [
     ),
   },
 ];
-export const ConnectWalletButton = () => {
+
+interface ConnectWalletButtonProps {
+  className?: string;
+}
+export const ConnectWalletButton = ({ className }: ConnectWalletButtonProps) => {
   return (
     <>
       <Dialog>
-        <DialogTrigger asChild className="">
+        <DialogTrigger asChild className={className}>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="hidden sm:flex px-2 py-1.5 rounded-md text-white text-sm font-medium justify-center  items-center gap-2 bg-blue-500 hover:bg-blue-600 cursor-pointer">
+            className="hidden sm:flex px-2 py-2 rounded-md text-white text-sm font-medium justify-center  items-center gap-2 bg-blue-500 hover:bg-blue-600 cursor-pointer">
             <Wallet className="h-4 w-4" />
             <span>Connect wallet</span>
           </motion.div>
@@ -122,7 +126,7 @@ export const ConnectWalletButton = () => {
       </Dialog>
       <div className="sm:hidden">
         <Drawer>
-          <DrawerTrigger className="w-full">
+          <DrawerTrigger className={` ${className} w-full`}>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

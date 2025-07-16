@@ -31,7 +31,7 @@ const LandingPage = () => {
           <FeaturedHeading />
         </section>
       </div>
-      <footer className="bg-[#232323] dark:bg-black text-white py-16 ">
+      <footer className="bg-[#232323] dark:bg-black text-white pt-16 pb-26">
         <LandinFooter />
       </footer>
     </>

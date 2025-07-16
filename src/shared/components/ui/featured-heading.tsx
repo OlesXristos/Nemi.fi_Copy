@@ -16,7 +16,7 @@ const FeaturedHeading = () => {
                 alt={''}
                 width={90}
                 height={90}
-                className=" cursor-pointer z-50 transition-all duration-300 hover:scale-105 "></Image>
+                className=" cursor-pointer z-10 transition-all duration-300 hover:scale-105 "></Image>
             </Link>
           </div>
         </div>

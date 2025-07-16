@@ -17,7 +17,7 @@ import Link from 'next/link';
 
 import { ConnectWalletButton } from './ConnectWalletButton';
 import { AnimatePresence, motion } from 'framer-motion';
-function MobileNavbar() {
+function BurgerNavMenu() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const { theme, setTheme } = useTheme();
   const [unlocked, setUnlocked] = useState(false);
@@ -61,7 +61,7 @@ function MobileNavbar() {
             <MenuIcon className="h-4 w-4" />
           </motion.div>
         </SheetTrigger>
-        <SheetContent side="right" className="w-[75%] h-full" title=" ">
+        <SheetContent side="right" className="w-[75%] h-full " title=" ">
           <SheetHeader className="flex flex-col  items-center space-x-2 justify-between h-[40%] gap-4 border-b ">
             <SheetTitle></SheetTitle>
             <div className="flex flex-col justify-center items-center h-full w-full gap-2 ">
@@ -266,4 +266,4 @@ function MobileNavbar() {
   );
 }
 
-export default MobileNavbar;
+export default BurgerNavMenu;
